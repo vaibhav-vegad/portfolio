@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav Vegad | Portfolio - PHP & Laravel Web Developer</title>
+    <meta name="description" content="Portfolio of Vaibhav Vegad, a dedicated PHP & Laravel Web Developer with experience in building dynamic web applications, taskboards, and attendance systems.">
+    <meta name="keywords" content="Vaibhav Vegad, PHP Developer, Laravel Developer, Web Developer Portfolio, CodeIgniter Developer, Backend Developer Portfolio">
+    <meta name="author" content="Vaibhav Vegad">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient background blobs -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>VV<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right">
+                <a href="VAIBHAV VEGAD-resume.docx" download class="btn btn-nav-download">
+                    <span>Resume</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-welcome">
+                        <span class="badge-dot"></span> Available for Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Vaibhav Vegad</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typewriter-text" class="accent-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc">
+                        A dedicated PHP Web Developer with around 2 years of hands-on experience building robust, dynamic, and database-driven web applications using Laravel, CodeIgniter, and MySQL.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="avatar-card glass-panel">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar-frame">
+                            <!-- Visual Avatar Coding Representation -->
+                            <div class="code-editor-header">
+                                <span class="dot dot-r"></span>
+                                <span class="dot dot-y"></span>
+                                <span class="dot dot-g"></span>
+                                <span class="editor-title">Developer.php</span>
+                            </div>
+                            <div class="code-editor-body">
+                                <pre><code><span class="token keyword">class</span> <span class="token class-name">WebDeveloper</span> {
+    <span class="token keyword">public</span> <span class="token variable">$name</span> = <span class="token string">'Vaibhav Vegad'</span>;
+    <span class="token keyword">public</span> <span class="token variable">$role</span> = <span class="token string">'PHP/Laravel Developer'</span>;
+    <span class="token keyword">public</span> <span class="token variable">$experience</span> = <span class="token string">'~2 Years'</span>;
+    
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getSkills</span>() {
+        <span class="token keyword">return</span> [
+            <span class="token string">'PHP'</span>, <span class="token string">'Laravel'</span>, 
+            <span class="token string">'CodeIgniter'</span>, <span class="token string">'MySQL'</span>,
+            <span class="token string">'JavaScript'</span>, <span class="token string">'HTML/CSS'</span>
+        ];
+    }
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="mouse-icon"><span class="wheel"></span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info scroll-reveal">
+                        <h3 class="about-heading">Passionate backend developer focused on clean code and reliable systems</h3>
+                        <p class="about-text">
+                            I hold a <strong>Bachelor of Computer Applications (BCA)</strong> from Shree Swaminarayan College of Computer Science, Bhavnagar. Over the past 2 years, I have successfully contributed to and delivered <strong>30+ projects</strong>, honing my technical expertise in building secure, dynamic, and high-performing web applications.
+                        </p>
+                        <p class="about-text">
+                            My backend programming is driven by problem-solving and structured database designs. I am highly collaborative, a quick learner, and adaptable to new environments and technologies.
+                        </p>
+                        
+                        <div class="soft-skills-container">
+                            <span class="soft-skill-tag">Team Collaboration</span>
+                            <span class="soft-skill-tag">Problem Solving</span>
+                            <span class="soft-skill-tag">Quick Learning</span>
+                            <span class="soft-skill-tag">Communication</span>
+                            <span class="soft-skill-tag">Adaptability</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats scroll-reveal">
+                        <div class="stats-grid">
+                            <div class="stat-card glass-panel">
+                                <h4 class="stat-num">2+</h4>
+                                <p class="stat-lbl">Years Experience</p>
+                            </div>
+                            <div class="stat-card glass-panel">
+                                <h4 class="stat-num">30+</h4>
+                                <p class="stat-lbl">Projects Completed</p>
+                            </div>
+                            <div class="stat-card glass-panel">
+                                <h4 class="stat-num">100%</h4>
+                                <p class="stat-lbl">Dedicated Code</p>
+                            </div>
+                            <div class="stat-card glass-panel">
+                                <h4 class="stat-num">1+</h4>
+                                <p class="stat-lbl">Academic Degree</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section section-padding" id="skills">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card glass-panel scroll-reveal">
+                        <div class="skills-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3 class="skills-card-title">Languages</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name-wrap"><span>PHP (Core / OOP)</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>JavaScript</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>Basic Python</span><span class="skill-pct">60%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skills-card glass-panel scroll-reveal">
+                        <div class="skills-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3 class="skills-card-title">Frameworks</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name-wrap"><span>Laravel</span><span class="skill-pct">85%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>CodeIgniter</span><span class="skill-pct">80%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Database & Frontend -->
+                    <div class="skills-card glass-panel scroll-reveal">
+                        <div class="skills-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                        </div>
+                        <h3 class="skills-card-title">Databases & UI</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name-wrap"><span>MySQL / SQL</span><span class="skill-pct">85%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>HTML5 / CSS3</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>Bootstrap</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tools & Environments -->
+                    <div class="skills-card glass-panel scroll-reveal">
+                        <div class="skills-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-svg"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="19.07" y1="4.93" x2="14.83" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="9.17" y1="14.83" x2="4.93" y2="19.07"/></svg>
+                        </div>
+                        <h3 class="skills-card-title">Tools & OS</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-name-wrap"><span>VS Code / Cursor</span><span class="skill-pct">95%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>Antigravity IDE</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>Git & GitHub (Version Control)</span><span class="skill-pct">75%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 75%;"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-name-wrap"><span>XAMPP / Dev Env</span><span class="skill-pct">80%</span></div>
+                                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section section-padding" id="experience">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-date">May 2024 - Present</span>
+                            <h3 class="timeline-role">PHP / Web Developer</h3>
+                            <h4 class="timeline-company">4Born Solutions</h4>
+                            <p class="timeline-summary">
+                                Progressed from an initial 2.5-month Training and 2.5-month Internship program into a Full-time PHP Developer. Actively engaged in core web engineering roles.
+                            </p>
+                            <ul class="timeline-details">
+                                <li>Developed dynamic web modules using PHP, Laravel, and CodeIgniter.</li>
+                                <li>Designed clean database schemas and optimized complex MySQL query structures.</li>
+                                <li>Maintained systems, debugged backend bottlenecks, and added features to dynamic tools.</li>
+                                <li>Collaborated effectively in team-based sprints to execute complex product timelines.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">CodeIgniter</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-panel">
+                            <span class="timeline-date">Previous (6 Months)</span>
+                            <h3 class="timeline-role">PHP Developer Intern</h3>
+                            <h4 class="timeline-company">ITHUB</h4>
+                            <p class="timeline-summary">
+                                Acquired hands-on real-world experience working on database systems, backend application logic, and codebase troubleshooting.
+                            </p>
+                            <ul class="timeline-details">
+                                <li>Worked on PHP-based database operations (CRUD systems).</li>
+                                <li>Built logical modules for application features.</li>
+                                <li>Fixed critical application bug tickets, improving user flow.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Core PHP</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">HTML / CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section section-padding" id="projects">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Major Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel scroll-reveal">
+                        <div class="project-header">
+                            <span class="project-category">PHP / Laravel</span>
+                            <div class="project-badge">Core Project</div>
+                        </div>
+                        <h3 class="project-title">Taskboard System</h3>
+                        <p class="project-desc">
+                            A collaborative taskboard and work management system designed to coordinate teams. Users can allocate tasks, manage workflow stages, and oversee general project progress effectively.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">JS</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel scroll-reveal">
+                        <div class="project-header">
+                            <span class="project-category">PHP / CodeIgniter</span>
+                            <div class="project-badge">Internal Tool</div>
+                        </div>
+                        <h3 class="project-title">Attendance Management System</h3>
+                        <p class="project-desc">
+                            A complete employee management system featuring check-in/out logging, automatic monthly reporting, leave requests workflow, and salary management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">CodeIgniter</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">AJAX</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel scroll-reveal">
+                        <div class="project-header">
+                            <span class="project-category">PHP Core</span>
+                            <div class="project-badge">System Module</div>
+                        </div>
+                        <h3 class="project-title">Aluminator</h3>
+                        <p class="project-desc">
+                            A smart College Alumni Network portal that manages alumni registrations, records communications, organizes university schedules, and handles campus newsletters.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP OOP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">CSS Flex</span>
+                            <span class="tech-tag">Admin Panel</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass-panel scroll-reveal">
+                        <div class="project-header">
+                            <span class="project-category">Academic Project</span>
+                            <div class="project-badge">Completed (90 days)</div>
+                        </div>
+                        <h3 class="project-title">Restaurant Operations System</h3>
+                        <p class="project-desc">
+                            An administrative portal for restaurant automation. Manages incoming food orders, coordinates waitstaff menu updates, and generates customer bills.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Vanilla CSS</span>
+                            <span class="token badge">BCA Academic</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card glass-panel scroll-reveal">
+                        <div class="project-header">
+                            <span class="project-category">CRUD Module</span>
+                            <div class="project-badge">Utility</div>
+                        </div>
+                        <h3 class="project-title">Card Member System</h3>
+                        <p class="project-desc">
+                            A secure record administration module featuring fast CRUD operations for company cardholder database management.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Card -->
+                    <div class="contact-info-card glass-panel scroll-reveal">
+                        <h3 class="contact-card-title">Let's discuss your next project!</h3>
+                        <p class="contact-card-desc">
+                            I am open to new full-time positions, freelance roles, or collaborating on interesting technical projects. Drop me a line!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-lbl">Email me</span>
+                                    <a href="mailto:vvegad1525@gmail.com" class="method-val">vvegad1525@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="method-details">
+                                    <span class="method-lbl">Call or WhatsApp</span>
+                                    <a href="tel:+916354077560" class="method-val">+91 6354077560</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <!-- LinkedIn, GitHub placeholders using beautiful interactive badges -->
+                            <span class="social-desc">Connected Platform Tools:</span>
+                            <div class="social-badges">
+                                <span class="social-badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> Git</span>
+                                <span class="social-badge"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-card glass-panel scroll-reveal">
+                        <form id="portfolio-contact-form" action="#" class="contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Collaboration Idea" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Tell me more about your requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Vaibhav Vegad. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Back to top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification (Success/Error Feedbacks) -->
+    <div class="toast-notification" id="toast-msg">
+        <span class="toast-icon">✓</span>
+        <span class="toast-text">Message sent successfully!</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
