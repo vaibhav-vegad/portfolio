@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,7 +33,8 @@
     <header class="navbar-header" id="header">
         <div class="nav-container">
             <a href="#home" class="logo">
-                <span class="logo-accent">&lt;</span>VV<span class="logo-accent">/&gt;</span>
+                <img src="logo.png" alt="Vaibhav Vegad Logo" class="logo-img">
+                <span class="logo-name">Vaibhav Vegad</span>
             </a>
             
             <nav class="nav-menu" id="nav-menu">
@@ -95,20 +98,28 @@
                                 <span class="dot dot-r"></span>
                                 <span class="dot dot-y"></span>
                                 <span class="dot dot-g"></span>
-                                <span class="editor-title">Developer.php</span>
+                                <span class="editor-title">PortfolioController.php</span>
                             </div>
                             <div class="code-editor-body">
-                                <pre><code><span class="token keyword">class</span> <span class="token class-name">WebDeveloper</span> {
-    <span class="token keyword">public</span> <span class="token variable">$name</span> = <span class="token string">'Vaibhav Vegad'</span>;
-    <span class="token keyword">public</span> <span class="token variable">$role</span> = <span class="token string">'PHP/Laravel Developer'</span>;
-    <span class="token keyword">public</span> <span class="token variable">$experience</span> = <span class="token string">'~2 Years'</span>;
-    
-    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getSkills</span>() {
-        <span class="token keyword">return</span> [
-            <span class="token string">'PHP'</span>, <span class="token string">'Laravel'</span>, 
-            <span class="token string">'CodeIgniter'</span>, <span class="token string">'MySQL'</span>,
-            <span class="token string">'JavaScript'</span>, <span class="token string">'HTML/CSS'</span>
-        ];
+                                <pre><code><span class="token keyword">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token class-name">App\Http\Controllers</span>;
+
+<span class="token keyword">use</span> <span class="token class-name">App\Models\Developer</span>;
+
+<span class="token keyword">class</span> <span class="token class-name">PortfolioController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> {
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getProfile</span>() {
+        <span class="token keyword">return</span> <span class="token function">response</span>()-><span class="token function">json</span>([
+            <span class="token string">'status'</span> => <span class="token string">'success'</span>,
+            <span class="token string">'developer'</span> => [
+                <span class="token string">'name'</span> => <span class="token string">'Vaibhav Vegad'</span>,
+                <span class="token string">'role'</span> => <span class="token string">'PHP / Laravel Engineer'</span>,
+                <span class="token string">'experience'</span> => <span class="token string">'2+ Years (30+ Projects)'</span>,
+                <span class="token string">'frameworks'</span> => [<span class="token string">'Laravel'</span>, <span class="token string">'CodeIgniter'</span>],
+                <span class="token string">'database'</span> => <span class="token string">'MySQL'</span>,
+                <span class="token string">'availability'</span> => <span class="token string">'Available for Hire'</span>
+            ]
+        ], <span class="token number">200</span>);
     }
 }</code></pre>
                             </div>
